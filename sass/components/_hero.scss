@@ -20,22 +20,22 @@
     background-position: center;
     background-size: cover;
 
-    background-image: url(../../images/Hero/Hero_sm.png);
+    background-image: url(../images/Hero/Hero_sm.png);
 
     @include mq(retina) {
-    background-image: url(../../images/Hero/Hero_sm@2x.png);}
+    background-image: url(../images/Hero/Hero_sm@2x.png);}
 
     @include mq(tablet) {
-    background-image: url(../../images/Hero/Hero_md.png);}
+    background-image: url(../images/Hero/Hero_md.png);}
 
     @include mq(retina) {
-    background-image: url(../../images/Hero/Hero_md@2x.png);
+    background-image: url(../images/Hero/Hero_md@2x.png);
         }
     @include mq(desktop) {
-    background-image: url(../../images/Hero/Hero_lg.png);}
+    background-image: url(../images/Hero/Hero_lg.png);}
     
     @include mq(retina) {
-    background-image: url(../../images/Hero/Hero_lg@2x.png);}
+    background-image: url(../images/Hero/Hero_lg@2x.png);}
 }
 
 .hero-title {
