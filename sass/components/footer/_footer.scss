@@ -1,0 +1,48 @@
+@import './footer-input';
+@import './footer-contacts';
+
+.footer {
+    background-color: var(--background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    @include mq(tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+.footer-thumb {
+    width: 231px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    @include mq(tablet) {
+    margin-bottom: 0;
+    }
+    @include mq(desktop){
+        margin: 0 70px 0 0;
+    }
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+
+
+    font-family: Raleway;
+    @include font(700, 24px, 1.19, 0.03em);
+    color: #ffffff;
+    @include mq(notDesktop) {
+        text-align: center;
+    }
+}
+

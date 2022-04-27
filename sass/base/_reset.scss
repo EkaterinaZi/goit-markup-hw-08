@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+.nav__list,
+.contacts,
+.features-list,
+.work-list,
+.team-list,
+.footer-list,
+.portfolio,
+.button-list,
+.clients-list,
+.social-icons-list, .mobile__nav, .mobile__contacts, .mobile__socials  {
+    list-style: none;
+    padding: 0;
+}
+
+.header__logo,
+.nav__link,
+.contact__link,
+.footer-logo,
+.footer-contacts, 
+.mobile__nav--item, .mobile__socials--item, .mobile__contacts--item{
+    text-decoration: none;
+}

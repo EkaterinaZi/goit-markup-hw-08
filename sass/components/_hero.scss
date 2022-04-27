@@ -1,0 +1,56 @@
+.hero {
+    background-color: var(--background);
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+
+
+@include mq(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+ 
+}
+}
+
+.overlay {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image: url(../../images/Hero/Hero_sm.png);
+
+    @include mq(retina) {
+    background-image: url(../../images/Hero/Hero_sm@2x.png);}
+
+    @include mq(tablet) {
+    background-image: url(../../images/Hero/Hero_md.png);}
+
+    @include mq(retina) {
+    background-image: url(../../images/Hero/Hero_md@2x.png);
+        }
+    @include mq(desktop) {
+    background-image: url(../../images/Hero/Hero_lg.png);}
+    
+    @include mq(retina) {
+    background-image: url(../../images/Hero/Hero_lg@2x.png);}
+}
+
+.hero-title {
+    @include font(900, 26px, 1.62, 0.06em);
+    text-align: center;
+    max-width: 360px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+@include mq(desktop){
+    @include font(900, 44px, 1.36, 0.06em);
+    max-width: 696px;}
+}

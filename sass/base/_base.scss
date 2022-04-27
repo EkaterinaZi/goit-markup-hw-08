@@ -1,0 +1,27 @@
+@import './reset';
+
+body {
+    font-family: var(--main-font);
+    background-color: #fff;
+    color: var(--primary-text-color);
+    @include font(null, 14px, 1.17, 0.03em);
+}
+.no-scroll{
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+    }
+
