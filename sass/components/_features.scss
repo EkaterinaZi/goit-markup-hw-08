@@ -10,8 +10,10 @@ padding-bottom: 60px;
 .features-list {
     display: flex;
     flex-direction: column;
+    
+   @include mq(mobile-only){
     text-align: center;
-
+   }
    @include mq(tablet) {
    flex-direction: row;
    flex-wrap: wrap;
