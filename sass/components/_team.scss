@@ -24,6 +24,9 @@
   @include mq(tablet) {
     max-width: 354px;
   }
+  @include mq(desktop) {
+    max-width: 270px;
+  }
 }
 
 .team-list .team-list-item {
