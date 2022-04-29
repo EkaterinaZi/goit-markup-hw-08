@@ -53,7 +53,7 @@ ul {
 .contact__link,
 .footer-logo,
 .footer-contacts, .portfolio__link,
-.mobile__nav--item, .mobile__socials--item, .mobile__contacts--item {
+.mobile__nav--link, .mobile__socials--item, .mobile__socials--link, .mobile__contacts--link {
   text-decoration: none;
 }
 
@@ -247,6 +247,8 @@ img {
     display: flex;
     margin-left: auto;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -407,6 +409,7 @@ img {
 @media screen and (min-width: 1200px) {
   .features {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -1449,7 +1452,8 @@ img {
   flex-direction: column;
 }
 
-.mobile__nav--item {
+.mobile__nav--link {
+  display: block;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.18;
@@ -1459,12 +1463,16 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .mobile__nav--item {
+  .mobile__nav--link {
     font-size: 40px;
   }
 }
 
-.mobile__nav--item:hover, .mobile__nav--item:focus {
+.mobile__nav--link:hover, .mobile__nav--link:focus {
+  color: var(--accent-colour);
+}
+
+.mobile__nav--link.current {
   color: var(--accent-colour);
 }
 
@@ -1477,7 +1485,11 @@ img {
   flex-direction: column;
 }
 
-.mobile__contacts--item {
+.mobile__contacts--item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile__contacts--link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.17;
@@ -1485,11 +1497,11 @@ img {
   color: var(--primary-text-color);
 }
 
-.mobile__contacts--item:not(:last-child) {
+.mobile__contacts--link:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mobile__contacts--item.current {
+.mobile__contacts--link.current {
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -1497,7 +1509,7 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .mobile__contacts--item.current {
+  .mobile__contacts--link.current {
     font-size: 27px;
   }
 }
@@ -1523,5 +1535,9 @@ img {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
+}
+
+.mobile__socials--link {
+  color: var(--accent-colour);
 }
 /*# sourceMappingURL=main.css.map */
